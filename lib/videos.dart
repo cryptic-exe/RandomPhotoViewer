@@ -1,6 +1,4 @@
 import 'dart:async';
-
-
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 import 'dart:math';
@@ -24,8 +22,6 @@ String img() {
   String image_name  = listImagesnotFound[r].toString();
   return image_name;
 }
-
-
 
 
 
