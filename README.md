@@ -1,16 +1,19 @@
-# surprise
 
-A new Flutter project.
+# Random PhotoViewer
 
-## Getting Started
+A app which show different photos and videos but only those photos and videos which
+you have stored in the photos and videos folder. I'll upgrade it so it will show photos
+from a website using API
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Usage/Examples
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Add path of images as list in third_page.dart and videos paths in videos.dart as list
+
+  
+## Authors
+
+- [@cryptic-exe](https://github.com/cryptic-exe)
+
+  
