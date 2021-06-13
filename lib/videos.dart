@@ -4,14 +4,7 @@ import 'package:video_player/video_player.dart';
 import 'dart:math';
 
 dynamic listImagesnotFound = [
- "Videos/1.mp4",
- "Videos/3.mp4",
- "Videos/4.mp4",
- "Videos/6.mp4",
- "Videos/7.mp4",
- "Videos/8.mp4",
- "Videos/9.mp4",
- "Videos/10.mp4",
+ //add Different videos Path here
 ];
 
 String img() {
@@ -76,6 +69,7 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
     return Container(
       child: Column(
         children: [
+          // Text('Videos will shown here'),
           FutureBuilder(
             future: _initializeVideoPlayerFuture,
             builder: (context, snapshot) {

@@ -1,9 +1,7 @@
 // import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:surprise/gift.dart';
 // import 'package:http/http.dart';
-import 'second_page.dart';
 import 'third_page.dart';
 import 'videos.dart';
 
@@ -17,10 +15,8 @@ void main() {
       // When navigating to the "/" route, build the FirstScreen widget.
       '/': (context) => FirstScreen(),
       // When navigating to the "/second" route, build the SecondScreen widget.
-      '/second': (context) => SecondScreen(),
       '/third': (context) => ThirdScreen(),
       '/fourth': (context) => VideoPlayerApp(),
-      '/fifth': (context) => Gift(),
     },
   ));
 }
@@ -29,12 +25,7 @@ class FirstScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(
-        image: DecorationImage(
-          image: AssetImage("images/front_img.png"),
-          fit: BoxFit.cover,
-        ),
-      ),
+      color: Colors.blue,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -43,28 +34,11 @@ class FirstScreen extends StatelessWidget {
             // Within the `FirstScreen` widget
             onPressed: () {
               // Navigate to the second screen using a named route.
-              Navigator.pushNamed(context, '/second');
-            },
-            child: Center(
-              child: Text(
-                'US',
-                style: TextStyle(
-                  color: Colors.redAccent,
-                  fontSize: 40,
-                  fontFamily: 'Pacifico',
-                ),
-              ),
-            ),
-          ),
-          TextButton(
-            // Within the `FirstScreen` widget
-            onPressed: () {
-              // Navigate to the second screen using a named route.
               Navigator.pushNamed(context, '/third');
             },
             child: Center(
               child: Text(
-                'Quotes',
+                'Photos',
                 style: TextStyle(
                   color: Colors.redAccent,
                   fontSize: 40,
@@ -81,23 +55,7 @@ class FirstScreen extends StatelessWidget {
             },
             child: Center(
               child: Text(
-                'Reels',
-                style: TextStyle(
-                  color: Colors.redAccent,
-                  fontSize: 40,
-                  fontFamily: 'Pacifico',
-                ),
-              ),
-            ),
-          ),TextButton(
-            // Within the `FirstScreen` widget
-            onPressed: () {
-              // Navigate to the second screen using a named route.
-              Navigator.pushNamed(context, '/fifth');
-            },
-            child: Center(
-              child: Text(
-                'Gift is Here Nsdn',
+                'Videos',
                 style: TextStyle(
                   color: Colors.redAccent,
                   fontSize: 40,
